@@ -65,7 +65,7 @@ var CKBUILDER_CONFIG = {
 		'newpage' : 0,
 		'pagebreak' : 0,
 		'pastetext' : 0,
-		'pastefromword' : 0,
+		'pastefromword' : 1,
 		'preview' : 0,
 		'print' : 0,
 		'removeformat' : 0,
