@@ -8,6 +8,21 @@ CKEDITOR.editorConfig = function( config )
   // Define changes to default configuration here. For example:
   // config.language = 'fr';
   // config.uiColor = '#AADC6E';
+
+  config.extraPlugins = 'symbol';
+
+  config.toolbar = [
+      { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ '-' ] },
+      { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic',  'Underline', 'Strike', 'Subscript', 'Superscript', 'Symbol' ] },
+      { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent' ] },
+  ];
+
+  config.height = '100px';
+  config.removePlugins = 'elementspath'; 
+  config.resize_enabled = false;
+
+  config.entities_processNumerical = true;
+  config.entities_processNumerical = 'force';
   
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
